@@ -1,23 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ReactFCCtest from 'react-fcctest';
+import {Button, Card, Typography} from '@material-ui/core';
 
 function App() {
   return (
     <div className="App">
+      <ReactFCCtest/>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Card id="quote-box">
+          <Typography id="text">Quote Placemarker</Typography>  
+          <Typography id="author" color="textSecondary">-Quote Author</Typography>
+          <Button id="new-quote" variant="contained" size="large" color="primary">New Quote</Button>
+          <Typography id="tweet-link">
+          <a
+            className="App-link"
+            id="tweet-quote"
+            href="https://twitter.com/intent/tweet"
+            // target="_blank"
+            // rel="noopener noreferrer"
+          >
+            Tweet this Quote!
+          </a>
+          </Typography>
+        </Card>
+        
       </header>
       {/* <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> */}
     </div>
