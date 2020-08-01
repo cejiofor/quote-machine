@@ -4,6 +4,11 @@ import ReactFCCtest from 'react-fcctest';
 import {Button, Card, Typography} from '@material-ui/core';
 
 function App() {
+
+  const quote = () => {
+
+  }
+
   return (
     <div className="App">
       <ReactFCCtest/>
@@ -16,7 +21,7 @@ function App() {
           <a
             className="App-link"
             id="tweet-quote"
-            href="https://twitter.com/intent/tweet"
+            href='https://twitter.com/intent/tweet?text=.thisquote'
             // target="_blank"
             // rel="noopener noreferrer"
           >
